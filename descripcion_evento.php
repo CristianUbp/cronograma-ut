@@ -34,11 +34,11 @@
     // Obtenemos los datos
     $row = $bd->fetch_assoc();
 
-    // titulo 
-    $titulo=$row['title'];
+    // materia
+    $materia=$row['materia'];
 
-    // cuerpo
-    $evento=$row['body'];
+    // profe
+    $profesor=$row['profesor'];
 
     // Fecha inicio
     $inicio=$row['inicio_normal'];
@@ -66,14 +66,14 @@ if (isset($_POST['eliminar_evento']))
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title><?=$titulo?></title>
+	<title><?=$profesor?></title>
 </head>
 <body>
-	 <h3><?=$titulo?></h3>
+	 <h3><?=$profesor?></h3>
 	 <hr>
      <b>Fecha inicio:</b> <?=$inicio?>
      <b>Fecha termino:</b> <?=$final?>
- 	<p><?=$evento?></p>
+ 	<p><?=$materia?></p>
 </body>
 <form action="" method="post">
     <button type="submit" class="btn btn-danger" name="eliminar_evento">Eliminar</button>

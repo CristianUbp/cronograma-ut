@@ -23,7 +23,7 @@
 $servidor='localhost';
 $usuario='root';
 $pass='root';
-$bd='eventos';
+$bd='apptv';
 
 // Nos conectamos a la base de datos
 $conexion = new mysqli($servidor, $usuario, $pass, $bd);	
